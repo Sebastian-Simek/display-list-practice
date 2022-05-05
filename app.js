@@ -1,6 +1,8 @@
-// import functions and grab DOM elements
+
+const displayDiv = document.getElementById('cats');
 
 // let state
+
 
 // set event listeners 
   // get user input
