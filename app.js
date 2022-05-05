@@ -1,3 +1,5 @@
+import { catArray } from './cats.js';
+import { renderCats } from './utils.js';
 
 const displayDiv = document.getElementById('cats');
 
@@ -5,6 +7,7 @@ const displayDiv = document.getElementById('cats');
 
 
 // set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+for (let cat of catArray) {
+    const catOutput = renderCats(cat);
+    displayDiv.append(catOutput);
+}
