@@ -2,7 +2,7 @@ import { catArray } from './cats.js';
 import { renderCats } from './utils.js';
 
 const displayDiv = document.getElementById('cats');
-
+const displayDiv2 = document.getElementById('composers');
 // let state
 
 
