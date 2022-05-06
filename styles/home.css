@@ -48,3 +48,7 @@ div {
     margin: 20px;
     justify-content: center;
 }
+
+#apples {
+    display: flex;
+}
