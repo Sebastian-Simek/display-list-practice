@@ -16,22 +16,22 @@ export function renderCats(booger) {
     return div;
 }
 
-export function renderComposer(booger) {
+export function renderComposer(composer) {
     const div = document.createElement('div');
     div.classList.add('composers');
 
     const h2 = document.createElement('h2');
-    h2.textContent = booger.name;
+    h2.textContent = composer.name;
 
     const p = document.createElement('p');
-    p.textContent = `Era: ${booger.era}`;
+    p.textContent = `Era: ${composer.era}`;
 
     const ul = document.createElement('ul');
-    ul.textContent = 'Hits';
+    ul.textContent = 'Hits:';
 
-    const li = document.createElement('li');
-    for (let music of booger.hits) {
-        li.textContent = music.pieceName;
+    for (let music of composer.hits) {
+        const li = document.createElement('li');
+        li.textContent = `${music.pieceName}: ${music.Classification}`;
         ul.append(li);
     }
 
