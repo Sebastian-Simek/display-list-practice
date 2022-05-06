@@ -1,0 +1,1 @@
+export const catArray = [{ name: 'Eddie', cutenessFactor: 8, age: '.5', image: './assets/eddie.png' }, { name: 'Sandy', cutenessFactor: 9, age: '4', image: './assets/sandy.png' }, { name: 'Bob', cutenessFactor: 10, age: '7', image: './assets/bob.png' }];
